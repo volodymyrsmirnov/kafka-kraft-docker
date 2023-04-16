@@ -1,0 +1,12 @@
+version: '2.1'
+
+services:
+    kafka:
+        image: ghcr.io/volodymyrsmirnov/kafka-kraft-docker:3.4.0
+        build:
+            labels:
+                - org.opencontainers.image.source=https://github.com/volodymyrsmirnov/kafka-kraft-docker
+        ports:
+            - "9092:9092"
+
+    
